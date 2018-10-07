@@ -4,7 +4,7 @@
 #include <SPI.h>
 // You should get Auth Token in the Blynk App.
 // Go to the Project Settings (nut icon).
-char auth[] = "848ab248064a43a6aa050f7aa095d0d1";
+char auth[] = "*************************";
 const unsigned long interval = 2500;
 unsigned long last = 0;
 String levelString;
@@ -19,7 +19,7 @@ BlynkTimer timer;
 void setup()
 {
   Serial.begin(115200);
-  Blynk.begin(auth, "Superonline", "kenny--72");
+  Blynk.begin(auth, "wifi" "pass");
   pinMode(5, OUTPUT);
   pinMode(16, OUTPUT);
   digitalWrite(16, HIGH);
